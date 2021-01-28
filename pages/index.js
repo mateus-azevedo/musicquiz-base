@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 
 import Widget from '../src/components/Widget';
@@ -29,6 +31,9 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <Head>
+          <title>MusicQuiz – Modelo Base</title>
+        </Head>
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -38,7 +43,7 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget></Widget>
+        <Widget />
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/mateus-azevedo" />
