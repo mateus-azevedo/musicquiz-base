@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>MusicQuiz – Modelo Base</title>
+        <title>MusicQuiz – Tela Inicial</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
