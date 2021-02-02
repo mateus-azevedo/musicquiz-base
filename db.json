@@ -27,7 +27,7 @@
     }
   ],
   "external": [
-    ""
+    "https://random-quiz.viniciusoliveiras.vercel.app/"
   ],
   "theme": {
     "colors": {
