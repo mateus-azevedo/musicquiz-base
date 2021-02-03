@@ -11,6 +11,10 @@ import QuizContainer from '../../src/components/QuizContainer';
 import Button from '../../src/components/Button';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
+import LottieLady from '../../src/components/LottieLady';
+
+// import GuitarLogo from '../../src/components/GuitarLogo';
+// import acousticGuitar from '../../src/assets/acoustic-guitar.png';
 
 function ResultWidget({ results }) {
   return (
@@ -49,11 +53,11 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Anotando os Acordes ...
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <LottieLady />
       </Widget.Content>
     </Widget>
   );
@@ -169,7 +173,7 @@ export default function QuizPage() {
   React.useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 2 * 1000);
   }, []);
 
   function handleSubmitQuiz() {
@@ -190,6 +194,8 @@ export default function QuizPage() {
         <a href="./" title="MusicQuiz – HomePage">
           <QuizLogo />
         </a>
+        {/* <GuitarLogo /> */}
+        {/* <img src={acousticGuitar} alt="Guitar Logo" /> */}
 
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
