@@ -14,6 +14,8 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import Link from '../src/components/Link';
+import GuitarLogo from '../src/components/GuitarLogo';
+import Logotipo from '../src/components/Logotipo';
 
 export default function Home() {
   const router = useRouter();
@@ -26,7 +28,10 @@ export default function Home() {
         <title>MusicQuiz – Tela Inicial</title>
       </Head>
       <QuizContainer>
-        <QuizLogo />
+        <Logotipo>
+          <QuizLogo />
+          <GuitarLogo />
+        </Logotipo>
         <Widget
           as={motion.section}
           transition={{ delay: 0, duration: 0.5 }}
